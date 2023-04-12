@@ -1,3 +1,4 @@
 from django.db import models
 
-# Create your models here.
+class Shop(models.Model):
+    address = models.ForeignKey('address.Address', on_delete=models.CASCADE)
