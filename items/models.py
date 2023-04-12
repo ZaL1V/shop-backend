@@ -8,7 +8,7 @@ class Items(models.Model):
         FEMALE = 'F', _('Female')
         UNISEX = 'U', _('Unisex')
 
-    artice =  models.CharField(unique=True, max_length=128)
+    article =  models.CharField(unique=True, max_length=128)
     title = models.CharField(max_length=256)
     category = models.ForeignKey('category.Category', on_delete=models.CASCADE)
     price = models.FloatField()
