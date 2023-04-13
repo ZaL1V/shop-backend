@@ -20,4 +20,4 @@ class Items(models.Model):
 
 
     def __str__(self):
-        return self.artice
+        return self.article
