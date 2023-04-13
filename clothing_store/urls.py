@@ -13,5 +13,6 @@ urlpatterns = [
         name='api-docs',
     ),
     path('api/' , include('items.urls')),
+    path('api/' , include('category.urls')),
     path('', admin.site.urls),
 ]
