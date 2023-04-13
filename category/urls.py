@@ -6,7 +6,7 @@ from . import views
 app_name = 'category'
 
 router = DefaultRouter()
-router.register('items', views.CategoryViewSet, 'category')
+router.register('category', views.CategoryViewSet, 'category')
 
 urlpatterns = [
     path('', include(router.urls))
