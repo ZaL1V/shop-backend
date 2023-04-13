@@ -15,5 +15,6 @@ urlpatterns = [
     path('api/' , include('items.urls')),
     path('api/' , include('category.urls')),
     path('api/' , include('address.urls')),
+    path('api/' , include('shops.urls')),
     path('', admin.site.urls),
 ]
